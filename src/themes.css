@@ -1,0 +1,110 @@
+/* themes.css */
+:root {
+    --background-color: #fff;
+    --text-color: #333;
+    --header-bg-color: #f8f9fa;
+    --navbar-bg-color: #007bff;
+    --border-color: #dee2e6;
+}
+
+.body-dark {
+    --background-color: #343a40;
+    --text-color: #f8f9fa;
+    --header-bg-color: #23272b;
+    --navbar-bg-color: #007bff;
+    --border-color: #343a40;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar, .navbar-brand {
+    background-color: var(--navbar-bg-color) !important;
+    color: var(--text-color) !important;
+}
+
+.container-fluid {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+.table, .card, .alert {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn, .btn-secondary {
+    background-color: var(--header-bg-color);
+    color: var(--text-color);
+    border-color: var(--border-color);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.alert, .card {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.input-group {
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.input-group-append {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    .btn, .btn-secondary {
+        font-size: 0.875rem;
+        padding: 10px 12px;
+    }
+    .card, .alert, .table {
+        font-size: 0.875rem;
+    }
+    .input-group {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    .btn, .btn-secondary {
+        font-size: 0.75rem;
+        padding: 8px 10px;
+    }
+    .card, .alert, .table {
+        font-size: 0.75rem;
+    }
+}
